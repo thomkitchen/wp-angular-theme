@@ -1,0 +1,3 @@
+<h1>{{post.title.rendered}}</h1>
+<h4>by: <a ui-sref="author({id: post.author})">{{author.name}}</h4></a>
+<div ng-bind-html="post.content.rendered | trusted_html"></div>
